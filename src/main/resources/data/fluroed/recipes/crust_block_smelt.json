@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "fluroed:goo_ore"
+  },
+  "result": "fluroed:crust_block",
+  "experience": 1.5,
+  "cookingtime": 200
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "fluroed:worker_seed",
+    "fluroed:chaser_seed",
+    "fluroed:sucker_seed",
+    "fluroed:lighter_seed",
+    "fluroed:darker_seed"
+  ]
+}

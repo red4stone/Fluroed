@@ -1,0 +1,12 @@
+{
+  "item.fluroed.worker_seed": "Worker Seed",
+  "item.fluroed.chaser_seed": "Chaser Seed",
+  "item.fluroed.sucker_seed": "Searcher Seed",
+  "item.fluroed.lighter_seed": "Light-searcher Seed",
+  "item.fluroed.darker_seed": "Darkness-searcher Seed",
+  "itemGroup.Fluroed": "Fluroed's Items",
+  "block.fluroed.goo_ore": "Glow Goo Ore",
+  "item.fluroed.crusty_goo": "Crusty Goo",
+  "block.fluroed.crust_block": "Encrusted Goo Block",
+  "block.fluroed.basin": "Fluro Basin"
+}
