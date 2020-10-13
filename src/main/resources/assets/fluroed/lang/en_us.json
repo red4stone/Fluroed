@@ -8,5 +8,6 @@
   "block.fluroed.goo_ore": "Glow Goo Ore",
   "item.fluroed.crusty_goo": "Crusty Goo",
   "block.fluroed.crust_block": "Encrusted Goo Block",
-  "block.fluroed.basin": "Fluro Basin"
+  "block.fluroed.basin": "Fluro Basin",
+  "entity.fluroed.worker": "Worker Fluro"
 }

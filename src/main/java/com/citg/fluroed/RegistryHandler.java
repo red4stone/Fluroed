@@ -4,14 +4,13 @@ import com.citg.fluroed.blocks.BasinBlock;
 import com.citg.fluroed.blocks.BlockItemBase;
 import com.citg.fluroed.blocks.CrustBlock;
 import com.citg.fluroed.blocks.GooOre;
+import com.citg.fluroed.entities.WorkerFluro;
 import com.citg.fluroed.items.ItemBase;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,11 +20,13 @@ public class RegistryHandler {
     // create DeferredRegister object
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Fluroed.MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Fluroed.MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, Fluroed.MODID);
 
     public static void init() {
         // attach DeferredRegister to the event bus
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     // register item
@@ -46,4 +47,11 @@ public class RegistryHandler {
     public static final RegistryObject<Item> GOO_ORE_ITEM = ITEMS.register("goo_ore", () -> new BlockItemBase(GOO_ORE.get()));
     public static final RegistryObject<Item> CRUST_BLOCK_ITEM = ITEMS.register("crust_block", () -> new BlockItemBase(CRUST_BLOCK.get()));
     public static final RegistryObject<Item> BASIN_ITEM = ITEMS.register("basin", () -> new BlockItemBase(BASIN.get()));
+
+    // register entities
+    public static final RegistryObject<EntityType<WorkerFluro>> WORKER = ENTITY_TYPES.register("worker", () ->
+            EntityType.Builder.create(WorkerFluro::new, EntityClassification.CREATURE)
+                    .size(0.8f, 1.5f)
+                    .build(new ResourceLocation(Fluroed.MODID, "worker").toString())
+    );
 }
