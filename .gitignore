@@ -2,6 +2,8 @@
 /.gradle/
 /build/
 /build/classes/java/main/
-*.log*
-/run/logs/
+
+# Annoying Files
+*.log
+*.log.gz
 vcs.xml
