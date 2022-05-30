@@ -4,10 +4,10 @@
   "item.fluroed.sucker_seed": "Searcher Seed",
   "item.fluroed.lighter_seed": "Light-searcher Seed",
   "item.fluroed.darker_seed": "Darkness-searcher Seed",
-  "itemGroup.Fluroed": "Fluroed's Items",
+  "itemGroup.fluroedTab": "Fluroed!",
   "block.fluroed.goo_ore": "Glow Goo Ore",
   "item.fluroed.crusty_goo": "Crusty Goo",
   "block.fluroed.crust_block": "Encrusted Goo Block",
   "block.fluroed.basin": "Fluro Basin",
-  "entity.fluroed.worker": "Worker Fluro"
+  "entity.fluroed.worker_fluro": "Worker Fluro"
 }

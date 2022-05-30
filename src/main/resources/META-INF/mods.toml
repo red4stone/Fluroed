@@ -27,7 +27,7 @@ displayName="Fluroed!" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://github.com/red4stone/Fluroed" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="assets/fluroed/textures/entity/fluro.png" #optional
+logoFile="fluro.png" #optional
 # A text field displayed in the mod UI
 credits="Friends & family" #optional
 # A text field displayed in the mod UI
