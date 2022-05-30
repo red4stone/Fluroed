@@ -1,12 +1,25 @@
-# Project exclude paths
-/.gradle/
-/build/
-/build/classes/java/main/
-/.idea/
-/logs/
-/run/
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
 
-# Annoying Files
-*.log
-*.log.gz
-vcs.xml
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt

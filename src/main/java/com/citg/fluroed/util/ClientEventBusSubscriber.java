@@ -1,8 +1,9 @@
 package com.citg.fluroed.util;
 
 import com.citg.fluroed.Fluroed;
-import com.citg.fluroed.RegistryHandler;
 import com.citg.fluroed.client.entity.render.WorkerRenderer;
+import com.citg.fluroed.registry.RegistryHandler;
+
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;

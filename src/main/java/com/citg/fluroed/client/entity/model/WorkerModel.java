@@ -1,23 +1,29 @@
 package com.citg.fluroed.client.entity.model;
 
 import com.citg.fluroed.entities.WorkerFluro;
-import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.entity.model.QuadrupedModel;
-import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.geom.PartPose;
+import net.minecraft.client.model.geom.builders.CubeDeformation;
+import net.minecraft.client.model.geom.builders.CubeListBuilder;
+import net.minecraft.client.model.geom.builders.LayerDefinition;
+import net.minecraft.client.model.geom.builders.MeshDefinition;
+import net.minecraft.client.model.geom.builders.PartDefinition;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 
 public class WorkerModel<T extends WorkerFluro> extends EntityModel {
-    private final ModelRenderer lLeg;
-    private final ModelRenderer rLeg;
-    private final ModelRenderer head;
+    private final ModelPart lLeg;
+    private final ModelPart rLeg;
+    private final ModelPart head;
 
     public WorkerModel() {
-        textureWidth = 48;
-        textureHeight = 48;
+        //textureWidth = 48;
+        //textureHeight = 48;
 
         lLeg = new ModelRenderer(this);
         lLeg.setRotationPoint(4.0F, 12.0F, -1.0F);
@@ -64,5 +70,19 @@ public class WorkerModel<T extends WorkerFluro> extends EntityModel {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;
+    }
+
+    @Override
+    public void setupAnim(Entity p_102618_, float p_102619_, float p_102620_, float p_102621_, float p_102622_,
+            float p_102623_) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void renderToBuffer(PoseStack p_103111_, VertexConsumer p_103112_, int p_103113_, int p_103114_,
+            float p_103115_, float p_103116_, float p_103117_, float p_103118_) {
+        // TODO Auto-generated method stub
+        
     }
 }

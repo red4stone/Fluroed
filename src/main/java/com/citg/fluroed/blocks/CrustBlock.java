@@ -1,20 +1,18 @@
 package com.citg.fluroed.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.material.Material;
 
 public class CrustBlock extends Block {
 
     public CrustBlock() {
         super(Block.Properties
-                .create(Material.CAKE)
-                .hardnessAndResistance(0.0f, 0.0f)
-                .sound(SoundType.SLIME)
+                .of(Material.CAKE)
+                .strength(0.0f, 0.0f)
+                .sound(SoundType.SLIME_BLOCK)
                 .jumpFactor(0.5f)
-                .slipperiness(0.95f)
-                .setLightLevel((lightLevel) -> 5)
+                .friction(0.95f)
+                .lightLevel((lightLevel) -> 5)
                 .speedFactor(0.3f)
         );
     }
