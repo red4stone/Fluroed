@@ -14,10 +14,11 @@ public class GooOre extends OreBlock {
                 .sound(SoundType.SLIME_BLOCK)
                 .jumpFactor(0.7f)
                 .friction(0.8f)
-                .lightLevel((lightLevel) -> 3)
+                .lightLevel((p_50755_) -> {
+                    return 4;
+                })
                 .requiresCorrectToolForDrops()
                 .speedFactor(0.5f)
         );
     }
-    // TODO: Figure out how the heck OreGen works
 }

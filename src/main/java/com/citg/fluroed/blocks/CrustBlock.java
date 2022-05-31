@@ -12,7 +12,9 @@ public class CrustBlock extends Block {
                 .sound(SoundType.SLIME_BLOCK)
                 .jumpFactor(0.5f)
                 .friction(0.95f)
-                .lightLevel((lightLevel) -> 5)
+                .lightLevel((p_50755_) -> {
+                    return 10;
+                })
                 .speedFactor(0.3f)
         );
     }
